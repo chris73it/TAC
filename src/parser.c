@@ -89,22 +89,6 @@ AST_T *parser_parse_id(parser_T *parser)
     return ast;
 }
 
-// AST_T *parser_parse_block(parser_T *parser)
-// {
-//     parser_eat(parser, TOKEN_LBRACE);
-//     AST_T *ast = init_ast(AST_COMPOUND);
-
-//     while (parser->token->type != TOKEN_RBRACE)
-//     {
-//         list_push(ast->children, parser_parse_expr(parser));
-//         // parser_eat(parser, TOKEN_SEMI);
-//     }
-
-//     parser_eat(parser, TOKEN_RBRACE);
-
-//     return ast;
-// }
-
 AST_T *parser_parse_list(parser_T *parser)
 {
     printf("A parser_parse_list\n");
